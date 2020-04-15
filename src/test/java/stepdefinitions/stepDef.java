@@ -14,7 +14,8 @@ public class stepDef
 	
 	
 	@Given("^I am in (.*)$")
-	public void i_am_in_automation_page(String pagetitle){
+	public void i_am_in_automation_page(String pagetitle){ 
+	 
 		String msg=ReusableActions.driver().getTitle();
 			 
 		Assert.assertTrue(msg.equalsIgnoreCase(pagetitle));

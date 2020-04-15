@@ -7,7 +7,8 @@ import pages.LandingPage;
 
 public class GlobalPageInitilization {
 	
-	public static <T> T initializaePage(Class<T> pageobject){ 
+	public static <T> T initializaePage(Class<T> pageobject){
+		System.out.println(ReusableActions.driver()+" webdriver is initilized");
 		return PageFactory.initElements(ReusableActions.driver(), pageobject);
 	}
 	
